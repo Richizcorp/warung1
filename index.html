@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/style.css">
+    <title>Warung T</title>
+</head>
+
+<body class="bg-slate-50 text-slate-800 antialiased ,min-h-screen flex flex-col justify-between">
+    
+    <header class="bg-white/80 backdrop-blur-md border-b border-slate-200 sticky top-0 z-50">
+
+        <div class="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
+            <a href="#" class="text-xl font-bold text-blue-600 flex items-center gap-2">
+                <span>Warung T</span>
+            </a>
+
+            <nav class="md:flex items-center gap-6 font-medium text-slate-600">
+                
+                    <a href="#produk" class="hover:text-blue-600 transition-colors">Daftar Produk</a>
+                    <a href="#pesan" class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors">Pemesanan</a>
+                
+            </nav>
+        </div>
+
+    </header>
+
+    <main class="max-w-6xl mx-auto px-4 py-16 w-full flex-grow">
+
+        <section id="produk" class="mb-16">
+
+            
+            <h2 class="text-base md:text-2xl bg-white border border-slate-200 shadow-md font-bold ">Daftar Produk Yang Tersedia</h2>
+
+            <div class="bg-white border border-slate-200 shadow-md font-light">
+                <article>
+                    <ul>
+                        <li>1. Beras</li>
+                        <li>2. Susu</li>
+                        <li>3. Kecap</li>
+                        <li>4. Minyak Goreng</li>
+                        <li>5. Garam</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+
+        <section id="pesan">
+            <h2 class="font-bold bg-white border border-slate-200 shadow-md px-4 py-2">Pemesanan</h2>
+
+            <div class="form-group py-4">
+                <form id="formpesan" class="space-y-4">
+                    <div class="bg-white border border-slate-100 shadow-md px-4 py-2">
+                        <label class="block">Nama Lengkap:</label><br>
+                        <input type="text" id="nama" placeholder="ex: Ahmad Saepulloh" required>
+                    </div>
+
+                        <br>
+
+                    <div class="bg-white border border-slate-100 shadow-md px-4 py-2">
+                        <label class="block">Alamat Lengkap:</label><br>
+                        <input type="text" id="alamat" placeholder="ex: Jl. Baharudin, No. 12" required>
+
+                    </div>
+
+                        <br>
+
+                    <div class="bg-white border border-slate-100 shadow-md px-4 py-2">
+                        <label class="block">Pilih Produk:</label><br>
+                        <select id="pilihan" name="pilihan" required>
+                            <option value=""></option>
+                            <option value="Beras">Beras</option>
+                            <option value="Susu">Susu</option>
+                            <option value="Kecap">Kecap</option>
+                            <option value="Minyak-Goreng">Minyak Goreng</option>
+                            <option value="garam">Garam</option>
+                        </select>
+                    </div>
+                    
+                        <br>
+
+                    <div class="bg-white border border-slate-100 shadow-md px-4 py-2">
+
+                        <label class="block">Catatan:</label><br>
+                        <input id="note" name="note" placeholder="ex: disebelah rumah sakit..."></input>
+
+                    </div>
+
+                         <br>
+
+                    <button type="submit" class="bg-red-600 px-4 py-2 text-white rounded-lg">Pesan</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Warung T dikelola oleh siapa aja</p>
+    </footer>
+
+    <script type="module" src="src/main.js"></script>
+</body>
+</html>
